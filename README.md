@@ -1,24 +1,13 @@
-# README
+# Code Challenge
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Create a new Rails app that keeps track of the user agents used to access it.
 
-Things you may want to cover:
+The user agent string should be saved in a table in the database, one entry for each unique user agent string.  The table should also have a counter and 2 timestamps, one for the first time the user agent was seen, and one for the last time.
 
-* Ruby version
+For each page request, increment the counter and set the timestamps appropriately.  (Do not worry about the extra db overhead to access the user agent table on each request; this is an artificial scenario.)
 
-* System dependencies
+Add an index page that shows a sorted list of user agents and their timestamps and counters.
 
-* Configuration
+Add a button to the index page that uses ajax to refresh the table from the server without doing a complete page refresh.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+(( This exercise should not take too long.  If you find yourself going over an hour, stop and send what you have so far. ))
