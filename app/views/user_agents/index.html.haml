@@ -1,0 +1,17 @@
+.table-responsive
+  %table.table
+    %thead
+      %tr
+        %th Counter
+        %th Name
+        %th First Appearance
+        %th Last Appearance
+
+    %tbody
+      - @user_agents.each do |user_agent|
+        %tr
+          %td
+            .badge.badge-primary= user_agent.counter
+          %td= user_agent.name
+          %td= format_date(user_agent.created_at)
+          %td= format_date(user_agent.updated_at)
