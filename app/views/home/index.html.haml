@@ -1,0 +1,12 @@
+%h2.text-center.py-4 Create a new Rails app that keeps track of the user agents used to access it.
+
+.jumbotron.py-4
+  %p The user agent string should be saved in a table in the database, one entry for each unique user agent string.  The table should also have a counter and 2 timestamps, one for the first time the user agent was seen, and one for the last time.
+
+  %p For each page request, increment the counter and set the timestamps appropriately.  (Do not worry about the extra db overhead to access the user agent table on each request; this is an artificial scenario.)
+
+  %p Add an index page that shows a sorted list of user agents and their timestamps and counters.
+
+  %p Add a button to the index page that uses ajax to refresh the table from the server without doing a complete page refresh.
+
+  %p (( This exercise should not take too long.  If you find yourself going over an hour, stop and send what you have so far. ))
