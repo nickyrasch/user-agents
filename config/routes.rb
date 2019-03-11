@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  root 'home#index'
+  root 'user_agents#index'
+  get 'prompt', to: 'home#index'
   resources :user_agents, only: %i[index create]
 end

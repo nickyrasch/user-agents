@@ -2,7 +2,7 @@ class UserAgentsController < ApplicationController
 
   # GET /user_agents
   def index
-    @user_agents = UserAgent.all
+    @user_agents = UserAgent.all.order(counter: 'DESC')
   end
 
   private
