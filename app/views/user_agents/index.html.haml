@@ -2,16 +2,16 @@
   %table.table
     %thead
       %tr
-        %th Counter
         %th Name
         %th First&nbsp;Used
         %th Last&nbsp;Used
+        %th Counter
 
     %tbody
       - @user_agents.each do |user_agent|
         %tr
-          %td
-            .badge.badge-primary= user_agent.counter
           %td= user_agent.name
           %td= format_date(user_agent.created_at)
           %td= format_date(user_agent.updated_at)
+          %td.text-right
+            .badge.badge-primary= user_agent.counter
